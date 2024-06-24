@@ -126,7 +126,27 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube version
 ```
 - **Explanation:**
-  - `minikube version`: Checks Minikube version.
+  - `minikube version`: Displays Minikube version.
+
+### Getting Default Cluster Details after Minikube Installation
+
+After installing Minikube, you can start it to create a local Kubernetes cluster and then retrieve cluster details using `kubectl`.
+
+**Step 1: Start Minikube**
+
+```bash
+minikube start
+```
+- **Explanation:**
+  - `minikube start`: Starts Minikube to create and start the local Kubernetes cluster.
+
+**Step 2: Get Cluster Details**
+
+```bash
+kubectl cluster-info
+```
+- **Explanation:**
+  - `kubectl cluster-info`: Displays details about the Kubernetes cluster managed by Minikube, including API server URL and kubeconfig location.
 
 ### Tools for Interacting and Developing Kubernetes Clusters
 
@@ -230,4 +250,3 @@ sudo rm /usr/local/bin/minikube
   - `sudo rm`: Deletes file with root permissions.
   - `/usr/local/bin/minikube`: Minikube binary path.
 
-These updated instructions should help you correctly install Kubernetes v1.28.0, Helm 3.2.0, Minikube, and related tools on RHEL 8.2, verify the installations, and uninstall them if necessary.
