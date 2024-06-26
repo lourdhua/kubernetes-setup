@@ -1,6 +1,7 @@
 ### Use Case: Setting Up a Multi-Node Kubernetes Development Cluster on a Single VM
 
 **Scenario**: You are tasked with setting up a Kubernetes development cluster with multiple worker nodes on a single VM to deploy and manage a web application.
+**Reference**: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/
 
 ### Architecture Overview
 
